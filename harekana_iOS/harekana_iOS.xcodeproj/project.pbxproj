@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2273FFF6842DC2A1F9A3805C /* Pods_harekana_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E40207A28534508E994B8D5F /* Pods_harekana_iOS.framework */; };
 		4F2A3FB721A711E800589998 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2A3FB621A711E800589998 /* AppDelegate.swift */; };
 		4F2A3FB921A711E800589998 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2A3FB821A711E800589998 /* ViewController.swift */; };
 		4F2A3FBC21A711E800589998 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F2A3FBA21A711E800589998 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		41FFED9FDC9454AE90F166B9 /* Pods-harekana_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-harekana_iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-harekana_iOS/Pods-harekana_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		4F2A3FB321A711E800589998 /* harekana_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = harekana_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F2A3FB621A711E800589998 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4F2A3FB821A711E800589998 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		4F2A3FBD21A711E900589998 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4F2A3FC021A711E900589998 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4F2A3FC221A711E900589998 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73A9A01A182D15BCCE5A773C /* Pods-harekana_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-harekana_iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-harekana_iOS/Pods-harekana_iOS.release.xcconfig"; sourceTree = "<group>"; };
+		E40207A28534508E994B8D5F /* Pods_harekana_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_harekana_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2273FFF6842DC2A1F9A3805C /* Pods_harekana_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				4F2A3FB521A711E800589998 /* harekana_iOS */,
 				4F2A3FB421A711E800589998 /* Products */,
+				7D7B1C3AF5F720B2FFD36424 /* Pods */,
+				CFF5BCEC2D710D75E86A7374 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = harekana_iOS;
 			sourceTree = "<group>";
 		};
+		7D7B1C3AF5F720B2FFD36424 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				41FFED9FDC9454AE90F166B9 /* Pods-harekana_iOS.debug.xcconfig */,
+				73A9A01A182D15BCCE5A773C /* Pods-harekana_iOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CFF5BCEC2D710D75E86A7374 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E40207A28534508E994B8D5F /* Pods_harekana_iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4F2A3FC521A711E900589998 /* Build configuration list for PBXNativeTarget "harekana_iOS" */;
 			buildPhases = (
+				0D563E6B3AC786291FADE11C /* [CP] Check Pods Manifest.lock */,
 				4F2A3FAF21A711E800589998 /* Sources */,
 				4F2A3FB021A711E800589998 /* Frameworks */,
 				4F2A3FB121A711E800589998 /* Resources */,
+				363D3399E60C3DA834DA3703 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0D563E6B3AC786291FADE11C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-harekana_iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		363D3399E60C3DA834DA3703 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-harekana_iOS/Pods-harekana_iOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/TinyConstraints/TinyConstraints.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TinyConstraints.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-harekana_iOS/Pods-harekana_iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4F2A3FAF21A711E800589998 /* Sources */ = {
@@ -278,15 +343,13 @@
 		};
 		4F2A3FC621A711E900589998 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41FFED9FDC9454AE90F166B9 /* Pods-harekana_iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ENMYN622CB;
 				INFOPLIST_FILE = harekana_iOS/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ishiguro.harekana-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -296,15 +359,13 @@
 		};
 		4F2A3FC721A711E900589998 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73A9A01A182D15BCCE5A773C /* Pods-harekana_iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ENMYN622CB;
 				INFOPLIST_FILE = harekana_iOS/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ishiguro.harekana-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
